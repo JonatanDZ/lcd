@@ -11,5 +11,5 @@ try:
         display.lcd_display_string(str(datetime.now().time()),2)
     
 except KeyboardInterrupt:
-    print("Lukker uret")
+    print("Slukker for uret")
     display.lcd_clear()
