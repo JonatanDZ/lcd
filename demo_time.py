@@ -10,11 +10,11 @@ try:
     while True:
         display.lcd_display_string("   Klokken er:", 1)
         display.lcd_display_string(str(datetime.now().time()),2)
-        sleep(2)
+        sleep(6)
         display.lcd_display_string("Det regner i dag", 1)   # Refresh the first line of display with a different message
-        sleep(2)                                           # Give time for the message to be read
+        sleep(6)                                           # Give time for the message to be read
         display.lcd_clear()                                # Clear the display of any data
-        sleep(2)   
+        sleep(1)   
     
 except KeyboardInterrupt:
     print("Slukker for uret")
