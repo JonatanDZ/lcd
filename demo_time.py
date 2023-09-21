@@ -19,7 +19,6 @@ try:
     p.start()
 
     while True:
-        display.lcd_clear()
         display.lcd_display_string("   Klokken er:", 1)
         sleep(6)
         display.lcd_display_string("Det regner i dag", 1)
