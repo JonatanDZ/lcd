@@ -9,7 +9,7 @@ def updateTime():
     while True:
         now = datetime.now().time()
         display.lcd_display_string(f'    {now.replace(microsecond=0)}',2)
-        sleep(0.5)
+        sleep(1)
 
 p = Process(target=updateTime)
 
@@ -24,7 +24,6 @@ try:
         display.lcd_display_string("Det regner i dag", 1)
         sleep(6)
         display.lcd_clear()
-        sleep(1)
 
 except KeyboardInterrupt:
     print("Slukker for uret")
