@@ -4,6 +4,7 @@ from datetime import  datetime
 from multiprocessing import Process
 
 display = drivers.Lcd()
+p = Process(target=updateTime)
 
 def updateTime():
     while True:
@@ -11,7 +12,6 @@ def updateTime():
         display.lcd_display_string(f'    {now.replace(microsecond=0)}',2)
         sleep(1)
 
-p = Process(target=updateTime)
 
 
 try:
