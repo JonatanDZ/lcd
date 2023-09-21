@@ -23,8 +23,8 @@ try:
         sleep(6)
         display.lcd_display_string("Det regner i dag", 1)
         sleep(6)
+        display.lcd_clear()
 
 except KeyboardInterrupt:
     print("Slukker for uret")
     display.lcd_clear()
-
