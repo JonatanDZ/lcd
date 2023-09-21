@@ -13,17 +13,18 @@ def updateTime():
 
 p = Process(target=updateTime)
 
+
 try:
     print("Skriver til LCD skaermen")
     
     p.start()
 
-    while False:
+    while True:
         display.lcd_display_string("   Klokken er:  ", 1)
         sleep(6)
         display.lcd_display_string("Det regner i dag", 1)
         sleep(6)
-        display.lcd_clear()
+        display.lcd_clear(1)
 
 except KeyboardInterrupt:
     print("Slukker for uret")
