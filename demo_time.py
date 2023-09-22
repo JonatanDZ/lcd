@@ -39,7 +39,7 @@ try:
     while True:
         display.lcd_display_string("   Klokken er:  ", 1)
         sleep(6)
-        display.lcd_display_string(f'   {weather_description}', 1)
+        display.lcd_display_string(f' {weather_description}', 1)
         sleep(6)
 
 except KeyboardInterrupt:
