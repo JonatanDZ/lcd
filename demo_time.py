@@ -30,6 +30,7 @@ def updateTime():
 
 p = Process(target=updateTime)
 
+
 try:
     print("Skriver til LCD skaermen")
     
