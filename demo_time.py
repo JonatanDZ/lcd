@@ -5,7 +5,6 @@ from multiprocessing import Process
 import requests
 
 display = drivers.Lcd()
-p = Process(target=updateTime)
 api_key = '46191dbc779cc644b3ef1468a6a5e1a5'
 city = 'Struer'
 
@@ -28,6 +27,8 @@ def updateTime():
         now = datetime.now().time()
         display.lcd_display_string(f'    {now.replace(microsecond=0)}',2)
         sleep(1)
+
+p = Process(target=updateTime)
 
 try:
     print("Skriver til LCD skaermen")
