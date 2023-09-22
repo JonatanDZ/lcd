@@ -19,7 +19,6 @@ def fetch_weather():
     except Exception as e:
         print('Error fetching weather data:', e)
 
-# To use the function and get the weather description:
 weather_description = fetch_weather()
 if weather_description:
     print(f'Weather: {weather_description}')
@@ -29,8 +28,6 @@ def updateTime():
         now = datetime.now().time()
         display.lcd_display_string(f'    {now.replace(microsecond=0)}',2)
         sleep(1)
-
-
 
 try:
     print("Skriver til LCD skaermen")
